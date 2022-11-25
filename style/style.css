@@ -127,12 +127,15 @@ header{
 .first-sec{
   display: flex;
   margin-top: 70px;
+  justify-content: center;
+  
 
 }
 .flexbox-my-bio{
   display: flex;
   flex-direction: column;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  align-items: flex-end;
 }
 .my_name{
   font-size: 25px;
@@ -143,4 +146,28 @@ header{
 }
 .info-about-me{
   width: 250px;
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+}
+.progress{
+  position:relative;
+  width: 200px;
+  height: 8px;
+  background-color: rgba(128, 128, 128, 0.781) ;
+  margin: 10px;
+  border-radius: 20px;
+}
+.progress span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #E93656;
+  transform: width 0.3 linear;
+  border-radius: 20px;
 }
