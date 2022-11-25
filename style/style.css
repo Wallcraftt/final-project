@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+header{
+  background-color: #DDDDDD;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.roca{
+  color: #1A1A1A;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-left: 20px;
+}
+.dot{
+  color: #0081FF;
+  font-size: 25px;
+
+}
+.resume{
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.5;
+  font-size: 15px;
+  transform: translate(20px,-35px);
+  width: 150px;
+}
+.number{
+  transform: translate(-50px);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 100px;
+  z-index: 0;
+}
+.about-me{
+  position: absolute; 
+  z-index: 1;
+  color: #373737;
+  width: 140px;
+  transform: translate(-10px,-80px);
+  font-size: 30px;
+  background: linear-gradient(90deg, #373737, #fff, #373737);
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+.bio_flexbox{
+  display: flex;
+  justify-content: center;
+}
+.my-info{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+}
+.header_img{
+  width: 300px;
+  height: 100%;
+}
+.char{
+  font-size: 25px;
+}
+.my-name{
+  font-size: 30px;
+}
+.my-profession{
+  font-size: 15px;
+}
+.social_network{ 
+ padding-top: 20px;
+}
+.facebook{
+  width: 25px;
+  padding-right: 5px;
+}
+.twitter{
+  width: 25px;
+  padding-right: 5px;
+}
+.google{
+  width: 25px;
+  padding-right: 5px;
+}
+.youtube{
+  width: 25px;
+  padding-right: 5px;
+}
+.rss{
+  width: 25px;
+  padding-right: 5px;
+}
+.satisfied-clients-flexbox{
+  display: flex;
+  justify-content: flex-end;
+}
+.change-color{
+  color: #E93656;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-bottom: 2px solid;
+  border-radius: 2px;
+  width: 230px;
+  margin-right: 50px;
+  font-size: 18px;
+  transform: translateY(-30px);
+}
+.satisfied-clients{
+  color: black;
+  margin-right: 50px;
+}
+.first-sec{
+  display: flex;
+  margin-top: 70px;
+
+}
+.flexbox-my-bio{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.my_name{
+  font-size: 25px;
+}
+.my_profession{
+  color: #DAAE19;
+  padding-bottom: 10px;
+}
+.info-about-me{
+  width: 250px;
+}
