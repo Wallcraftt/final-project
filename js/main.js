@@ -1,8 +1,12 @@
 let headerImg = document.querySelector('.header_img')
-let spans = document.querySelectorAll('.progress span')
 let htmlPr = document.querySelector('.htmlpr')
 let cssPr = document.querySelector('.csspr')
 let jsPr = document.querySelector('.jspr')
+
+let spanFir = document.querySelectorAll('.progress .static')
+let spanSec = document.querySelectorAll('.progress .static-2')
+let spanTh = document.querySelectorAll('.progress .static-3')
+let spanFourth = document.querySelectorAll('.progress .static_4')
 
 
 let firstBtn = document.querySelector('.slider-btn-1')
@@ -19,8 +23,8 @@ let slides = document.querySelector('.img')
 
 window.onscroll = function (){
   if (window.scrollY >= headerImg.offsetTop){
-    spans.forEach((span)=>{
-      span.style.width=span.dataset.width
+    spanFir.forEach((spanFir)=>{
+      spanFir.style.width=spanFir.dataset.width
       htmlPr.style.display = 'inline'
       htmlPr.innerHTML = '(80%)'
       cssPr.style.display = 'inline'
@@ -48,6 +52,16 @@ function renderSlider() {
     slideFourth.style.display = 'none'
     slideSecond.style.display = 'block'
     name.innerHTML = 'Moiz Amir Ali'
+    spanSec.forEach((spanSec)=>{
+      spanSec.style.width=spanSec.dataset.width
+      htmlPr.style.display = 'inline'
+      htmlPr.innerHTML = '(85%)'
+      cssPr.style.display = 'inline'
+      cssPr.innerHTML = '(75%)'
+      jsPr.style.display = 'inline'
+      jsPr.innerHTML = '(55%)'
+      spanSec.style.transition = 'width 0.2s linear'
+    })
   })
   thirdBtn.addEventListener('click',()=>{
     slideThird.classList.add('.active')
@@ -57,6 +71,16 @@ function renderSlider() {
     slideFirst.style.display = 'none'
     slideSecond.style.display = 'none'
     name.innerHTML = 'Tamal Sen'
+    spanTh.forEach((spanTh)=>{
+      spanTh.style.width=spanTh.dataset.width
+      htmlPr.style.display = 'inline'
+      htmlPr.innerHTML = '(90%)'
+      cssPr.style.display = 'inline'
+      cssPr.innerHTML = '(80%)'
+      jsPr.style.display = 'inline'
+      jsPr.innerHTML = '(60%)'
+      spanTh.style.transition = 'width 0.2s linear'
+    }) 
   })
   fourBtn.addEventListener('click',()=>{
     slideFourth.classList.add('.active')
@@ -66,7 +90,16 @@ function renderSlider() {
     slideThird.style.display = 'none'
     slideSecond.style.display = 'none'
     name.innerHTML = 'Othmane Nejdi'
-   
+    spanFourth.forEach((spanFourth)=>{
+      spanFourth.style.width=spanFourth.dataset.width
+      htmlPr.style.display = 'inline'
+      htmlPr.innerHTML = '(95%)'
+      cssPr.style.display = 'inline'
+      cssPr.innerHTML = '(80%)'
+      jsPr.style.display = 'inline'
+      jsPr.innerHTML = '(65%)'
+      spanFourth.style.transition = 'width 0.2s linear' 
+    })
   })
   firstBtn.addEventListener('click',()=>{
     slideFirst.classList.add('.active')
@@ -76,6 +109,16 @@ function renderSlider() {
     slideThird.style.display = 'none'
     slideSecond.style.display = 'none'
     name.innerHTML = 'Goga Mchedlidze'
+    spanFir.forEach((spanFir)=>{
+      spanFir.style.width=spanFir.dataset.width
+      htmlPr.style.display = 'inline'
+      htmlPr.innerHTML = '(80%)'
+      cssPr.style.display = 'inline'
+      cssPr.innerHTML = '(70%)'
+      jsPr.style.display = 'inline'
+      jsPr.innerHTML = '(50%)'
+    })
+    
   })
 }
 renderSlider()
