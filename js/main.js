@@ -528,27 +528,17 @@ const website = document.querySelector('#website')
 const userMessage = document.querySelector('#message-form')
 const sendForm = document.querySelector('#send-form')
 const formInfo = document.querySelector('.form_info')
+const teamRosa = document.querySelector('.team-rosa')
 
 
-
-function getAllUser(){
-  fetch("https://borjomi.loremipsum.ge/api/all-users")
-  .then((res)=>{
-    return res.json()
-  })
-  .then((data)=>{
-  const users = data.users
-  })
-}
-getAllUser()
 
 formInfo.addEventListener("submit",(e)=>{
   e.preventDefault()
 
-  const userNameValue = userName.value
-  const userEmailValue = userEmail.value
-  const websiteValue = website.value
-  const userMessageValue = userMessage.value
+  let userNameValue = userName.value
+  let userEmailValue = userEmail.value
+  let websiteValue = website.value
+  let userMessageValue = userMessage.value
 
   const newUsers = {
     name: userNameValue,
@@ -559,6 +549,16 @@ formInfo.addEventListener("submit",(e)=>{
   addNewUser(newUsers)
   formInfo.reset()
   console.log(newUsers)
+  
+  
+
+      modal.classList.add('active-modal')
+      teamRosa.style.display = 'none'
+      closeModal.addEventListener('click',()=>{
+        modal.classList.remove('active-modal')
+        teamRosa.style.display = 'block'
+      })
+    
 })
 
 function addNewUser(userInfo) {
@@ -571,3 +571,8 @@ function addNewUser(userInfo) {
     console.log(data)
   })
 }
+let activeModal = document.querySelector('.active-modal')
+let closeModal = document.querySelector('.close-modal')
+let modal  = document.querySelector('.modal')
+
+
