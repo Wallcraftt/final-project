@@ -23,7 +23,6 @@ header{
 .dot{
   color: #0081FF;
   font-size: 25px;
-
 }
 .resume{
   display: block;
@@ -1694,8 +1693,6 @@ textarea::-webkit-scrollbar{
   }
   .thecard_5:hover{
     transform: rotateY(180deg) translate(150px,460px);
-    
-  
   }
   .element-10{
     display: flex;
@@ -1793,6 +1790,7 @@ textarea::-webkit-scrollbar{
     transform: rotateY(180deg); 
     backface-visibility: hidden;
   }
+  
   .all-project{
     display: none;
     }
@@ -1843,8 +1841,10 @@ textarea::-webkit-scrollbar{
     }
     .div-news-event{
       display: none;
+    }    
+    .team-rosa{
+      transform: translateY(-2px);
     }
-    
 }
 @media (max-width: 768px) {
   .satisfied-clients-flexbox{
@@ -2072,7 +2072,7 @@ textarea::-webkit-scrollbar{
    transform: translateX(60px);
   }
   .team-rosa{
-    transform: translate(-0px,-50px);
+   display: none;
     z-index: 0;
   }
   .contact-us-flexbox{
