@@ -191,19 +191,22 @@ header{
 }
 .slider-btn-1{
   border: 1px solid;
-  padding: 2px;
+  padding: 5px 8px;
 }
 .slider-btn-2{
   border: 1px solid;
   padding: 2px;
+  padding: 5px 8px;
 }
 .slider-btn-3{
   border: 1px solid;
   padding: 2px;
+  padding: 5px 8px;
 }
 .slider-btn-4{
   border: 1px solid;
   padding: 2px;
+  padding: 5px 8px;
 }
 .slider-btn-1:hover{
   background-color: #15263E;
