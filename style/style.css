@@ -1837,13 +1837,16 @@ textarea::-webkit-scrollbar{
       display: none;
     }
     .contact-us-flexbox{
-      transform: translateY(400px);
+      transform: translateY(200px);
     }
     .div-news-event{
       display: none;
     }    
     .team-rosa{
       transform: translateY(-2px);
+    }
+    .company-cards{
+      display: none;
     }
 }
 @media (max-width: 768px) {
