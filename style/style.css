@@ -1843,7 +1843,7 @@ textarea::-webkit-scrollbar{
       display: none;
     }    
     .team-rosa{
-      transform: translateY(-2px);
+      display: none;
     }
     .company-cards{
       display: none;
@@ -2080,6 +2080,7 @@ textarea::-webkit-scrollbar{
   }
   .contact-us-flexbox{
     height: 450px;
+    
   }
   .contact-us-p{
     width: 80%;
@@ -2109,5 +2110,11 @@ textarea::-webkit-scrollbar{
   .modal-text{
     width: 80%;
     margin-left: -10%;
+  }
+  footer{
+    transform: translateY(-0px);
+  }
+  .teamrosa{
+   
   }
 }
